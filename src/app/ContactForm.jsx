@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 
 const encode = (data) => {
@@ -42,6 +44,7 @@ const ContactForm = () => {
         method="post"
         onSubmit={handleSubmit}
       >
+        <input type="hidden" name="form-name" value="contact" />
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700">
             Name{" "}
