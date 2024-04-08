@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="bg-gray-500">
+    <div className="bg-gray-400">
       <h2>Contact Us</h2>
       <form name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
