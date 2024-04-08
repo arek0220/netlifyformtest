@@ -36,7 +36,12 @@ const ContactForm = () => {
   return (
     <div className="bg-white p-8 rounded-lg shadow-md w-96 mx-auto">
       <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-      <form onSubmit={handleSubmit}>
+      <form
+        name="contact"
+        data-netlify="true"
+        method="post"
+        onSubmit={handleSubmit}
+      >
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700">
             Name{" "}
