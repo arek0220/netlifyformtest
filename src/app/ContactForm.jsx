@@ -19,7 +19,7 @@ const ContactForm = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formData }),
+      body: new URLSearchParams(formData).toString(),
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
