@@ -1,9 +1,7 @@
-import Contact from "./components/Contact";
+"use client";
+import Image from "next/image";
+import ContactForm from "./ContactForm";
 
 export default function Home() {
-  return (
-    <div className="bg-gray-400">
-      <Contact />
-    </div>
-  );
+  return <ContactForm />;
 }
