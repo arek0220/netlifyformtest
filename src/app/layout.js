@@ -14,17 +14,12 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         {children}
         <form name="contact" method="POST" data-netlify="true" hidden>
-          <label>
-            Your Name:
-            <input type="text" name="name" />
-          </label>
-          <label>
-            Your Email:
-            <input type="email" name="email" />
-          </label>
-          <label>
-            Message: <textarea name="message"></textarea>
-          </label>
+          <input type="text" name="name" />
+
+          <input type="email" name="email" />
+
+          <textarea name="message"></textarea>
+
           <button type="submit">Send</button>
         </form>
       </body>
